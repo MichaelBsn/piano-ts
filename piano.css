@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#keyboard {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.octave {
+  height: 300px;
+  width: 50%;
+}
+.octave button {
+  width: 3em;
+  height: 100%;
+}
+.octave button:nth-child(1),
+.octave button:nth-child(3),
+.octave button:nth-child(5),
+.octave button:nth-child(6),
+.octave button:nth-child(8),
+.octave button:nth-child(10),
+.octave button:nth-child(12) {
+  z-index: 1;
+  background-color: white;
+}
+.octave button:nth-child(2),
+.octave button:nth-child(4),
+.octave button:nth-child(7),
+.octave button:nth-child(9),
+.octave button:nth-child(11) {
+  height: 150px;
+  background-color: black;
+  z-index: 2;
+  position: absolute;
+  transform: translate(-25px);
+  border: 1px solid white;
+}
+
+/*# sourceMappingURL=piano.css.map */
